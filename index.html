@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Asgar Luxury Bags | Premium Trolley Bag Manufacturer & Wholesaler</title>
+
+  <meta
+    name="description"
+    content="Asgar Luxury Bags - Soft trolley bag manufacturer and wholesaler for wholesale buyers, retailers, distributors and bulk orders."
+  />
+
+  <meta
+    name="keywords"
+    content="trolley bag manufacturer, trolley bag wholesaler, soft trolley bags, luggage manufacturer, wholesale trolley bags, bulk trolley bags, Asgar Luxury Bags"
+  />
+
+  <meta name="theme-color" content="#08111f" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --navy: #071426;
+      --navy-2: #0c1c31;
+      --gold: #c9972b;
+      --gold-light: #e4bb63;
+      --cream: #f8f5ee;
+      --text: #172033;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+      --green: #16a34a;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      color: var(--text);
+      background: #f6f7f9;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .navy {
+      background: var(--navy);
+    }
+
+    .navy-2 {
+      background: var(--navy-2);
+    }
+
+    .gold {
+      color: var(--gold);
+    }
+
+    .gold-bg {
+      background: linear-gradient(135deg, #b98216, #d9ac4c);
+    }
+
+    .gold-bg:hover {
+      background: linear-gradient(135deg, #a87210, #c99935);
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(10px);
+    }
+
+    .topbar {
+      background: #050d18;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .main-header {
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid #ececec;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .logo-box {
+      width: 46px;
+      height: 46px;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      letter-spacing: -2px;
+    }
+
+    .logo-box::before {
+      content: "";
+      position: absolute;
+      inset: 4px;
+      border: 1px solid rgba(201,151,43,0.55);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        linear-gradient(rgba(5,14,27,0.86), rgba(5,14,27,0.90)),
+        url("images/banner.jpg") center / cover no-repeat;
+      min-height: 760px;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      right: -180px;
+      top: -180px;
+      background: radial-gradient(
+        circle,
+        rgba(201,151,43,0.20),
+        transparent 65%
+      );
+      pointer-events: none;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-title {
+      font-size: clamp(2.6rem, 6vw, 5.7rem);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+    }
+
+    .hero-subtitle {
+      color: #cfd6df;
+      line-height: 1.8;
+    }
+
+    .hero-stat {
+      min-width: 120px;
+    }
+
+    .feature-strip {
+      position: relative;
+      z-index: 5;
+      margin-top: -48px;
+    }
+
+    .feature-card {
+      background: white;
+      border: 1px solid #e8eaee;
+      box-shadow: 0 14px 40px rgba(7,20,38,0.08);
+    }
+
+    .section-label {
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+    }
+
+    .section-title {
+      letter-spacing: -0.04em;
+    }
+
+    .product-showcase {
+      background: #101c2d;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .product-showcase::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(201,151,43,0.12), transparent 30%),
+        radial-gradient(circle at 80% 80%, rgba(255,255,255,0.06), transparent 28%);
+      pointer-events: none;
+    }
+
+    .image-frame {
+      background: #f1f2f4;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .image-frame:hover img {
+      transform: scale(1.045);
+    }
+
+    .gallery-card {
+      background: white;
+      border: 1px solid #e8eaef;
+      box-shadow: 0 12px 34px rgba(15,23,42,0.07);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 42px rgba(15,23,42,0.12);
+    }
+
+    .premium-line {
+      height: 1px;
+      background: linear-gradient(
+        to right,
+        transparent,
+        rgba(201,151,43,0.65),
+        transparent
+      );
+    }
+
+    .process-card {
+      background: white;
+      border: 1px solid #e7e9ed;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .process-number {
+      font-size: 4.7rem;
+      line-height: 1;
+      font-weight: 900;
+      color: rgba(201,151,43,0.13);
+      position: absolute;
+      right: 14px;
+      top: 5px;
+    }
+
+    .size-card {
+      border: 1px solid #e3e5e8;
+      background: white;
+      transition: all 0.25s ease;
+    }
+
+    .size-card:hover {
+      border-color: var(--gold);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(7,20,38,0.08);
+    }
+
+    .cta-section {
+      background:
+        linear-gradient(
+          rgba(5,14,27,0.94),
+          rgba(5,14,27,0.96)
+        ),
+        url("images/banner.jpg") center / cover no-repeat;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid #e4e6ea;
+      transition: 0.25s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--gold);
+      box-shadow: 0 14px 35px rgba(7,20,38,0.08);
+    }
+
+    .mobile-menu {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, opacity 0.25s ease;
+    }
+
+    .mobile-menu.open {
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .modal-wrap {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.68);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-wrap.open {
+      display: flex;
+    }
+
+    .modal-box {
+      width: 100%;
+      max-width: 520px;
+      max-height: 92vh;
+      overflow-y: auto;
+      background: white;
+      border-radius: 22px;
+      box-shadow: 0 30px 90px rgba(0,0,0,0.28);
+    }
+
+    .toast {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 1200;
+      background: #0b1728;
+      color: white;
+      padding: 13px 17px;
+      border-radius: 12px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.22);
+      opacity: 0;
+      transform: translateY(20px);
+      pointer-events: none;
+      transition: 0.25s ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .social-link {
+      transition: 0.2s ease;
+    }
+
+    .social-link:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 767px) {
+      .hero {
+        min-height: 700px;
+      }
+
+      .feature-strip {
+        margin-top: 0;
+        padding-top: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       TOP INFORMATION BAR
+  ========================== -->
+  <div class="topbar text-white">
+    <div class="max-w-7xl mx-auto px-4 py-2.5">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2 text-xs md:text-sm">
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+          <a href="tel:+919653181917" class="hover:text-yellow-400">
+            ☎ +91 96531 81917
+          </a>
+
+          <a href="mailto:aspak0131@gmail.com" class="hover:text-yellow-400">
+            ✉ aspak0131@gmail.com
+          </a>
+        </div>
+
+        <div class="flex items-center gap-2 font-extrabold tracking-widest">
+          <span class="text-yellow-400">WHOLESALE</span>
+          <span class="text-gray-500">•</span>
+          <span class="text-yellow-400">BULK ORDERS</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       MAIN HEADER
+  ========================== -->
+  <header class="main-header">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="h-[78px] flex items-center justify-between gap-5">
+
+        <a href="#home" class="flex items-center gap-3">
+          <div class="logo-box">
+            AL
+          </div>
+
+          <div>
+            <div class="font-black tracking-[0.18em] text-lg leading-none">
+              ASGAR
+            </div>
+            <div class="text-[10px] font-bold tracking-[0.24em] text-gray-500 mt-1">
+              LUXURY BAGS
+            </div>
+          </div>
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-bold">
+          <a href="#home" class="hover:text-yellow-600 transition">Home</a>
+          <a href="#products" class="hover:text-yellow-600 transition">Products</a>
+          <a href="#sizes" class="hover:text-yellow-600 transition">Sizes</a>
+          <a href="#gallery" class="hover:text-yellow-600 transition">Gallery</a>
+          <a href="#process" class="hover:text-yellow-600 transition">How It Works</a>
+          <a href="#contact" class="hover:text-yellow-600 transition">Contact</a>
+        </nav>
+
+
+        <!-- DESKTOP BUTTONS -->
+        <div class="hidden md:flex items-center gap-3">
+          <a
+            href="https://wa.me/919653181917"
+            target="_blank"
+            rel="noopener"
+            class="border border-green-600 text-green-700 px-4 py-2.5 rounded-lg font-bold text-sm hover:bg-green-50 transition"
+          >
+            WhatsApp
+          </a>
+
+          <button
+            data-product="General Trolley Bag Inquiry"
+            class="quote-btn gold-bg text-white px-5 py-2.5 rounded-lg font-bold text-sm shadow-lg"
+          >
+            Get Bulk Quote
+          </button>
+        </div>
+
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          id="menuBtn"
+          class="lg:hidden text-2xl w-11 h-11 rounded-lg border border-gray-200"
+          aria-label="Open menu"
+          type="button"
+        >
+          ☰
+        </button>
+
+      </div>
+
+
+      <!-- MOBILE MENU -->
+      <div id="mobileMenu" class="mobile-menu lg:hidden border-t border-gray-100">
+        <div class="py-4 space-y-1">
+
+          <a href="#home" class="block py-3 font-semibold">
+            Home
+          </a>
+
+          <a href="#products" class="block py-3 font-semibold">
+            Products
+          </a>
+
+          <a href="#sizes" class="block py-3 font-semibold">
+            Sizes
+          </a>
+
+          <a href="#gallery" class="block py-3 font-semibold">
+            Gallery
+          </a>
+
+          <a href="#process" class="block py-3 font-semibold">
+            How It Works
+          </a>
+
+          <a href="#contact" class="block py-3 font-semibold">
+            Contact
+          </a>
+
+          <a
+            href="https://wa.me/919653181917"
+            target="_blank"
+            rel="noopener"
+            class="block mt-2 text-center bg-green-600 text-white py-3.5 rounded-lg font-extrabold"
+          >
+            WhatsApp Inquiry
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+  <section id="home" class="hero text-white">
+
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28 w-full">
+      <div class="hero-content">
+
+        <div class="max-w-4xl">
+
+          <div class="inline-flex items-center gap-2 border border-yellow-500/30 bg-yellow-500/10 px-4 py-2 rounded-full text-yellow-400 text-xs md:text-sm font-extrabold tracking-wide">
+            <span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+            DIRECT FROM MANUFACTURER
+          </div>
+
+
+          <h1 class="hero-title font-black mt-7">
+            Premium Soft
+            <span class="gold block">Trolley Bags</span>
+            Made for Bulk Buyers
+          </h1>
+
+
+          <p class="hero-subtitle mt-7 text-base md:text-xl max-w-2xl">
+            Asgar Luxury Bags supplies soft and fabric trolley bags
+            for wholesale buyers, retailers, distributors and business
+            orders.
+          </p>
+
+
+          <!-- HERO STATS -->
+          <div class="mt-9 flex flex-wrap gap-3">
+
+            <div class="glass hero-stat rounded-xl px-5 py-4">
+              <div class="gold text-2xl font-black">
+                20"
+              </div>
+              <div class="text-xs text-gray-300 mt-1">
+                Trolley
+              </div>
+            </div>
+
+            <div class="glass hero-stat rounded-xl px-5 py-4">
+              <div class="gold text-2xl font-black">
+                24"
+              </div>
+              <div class="text-xs text-gray-300 mt-1">
+                Trolley
+              </div>
+            </div>
+
+            <div class="glass hero-stat rounded-xl px-5 py-4">
+              <div class="gold text-2xl font-black">
+                28"
+              </div>
+              <div class="text-xs text-gray-300 mt-1">
+                Trolley
+              </div>
+            </div>
+
+            <div class="glass hero-stat rounded-xl px-5 py-4">
+              <div class="gold text-2xl font-black">
+                100+
+              </div>
+              <div class="text-xs text-gray-300 mt-1">
+                Bulk Pieces
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- HERO BUTTONS -->
+          <div class="mt-9 flex flex-wrap gap-3">
+
+            <a
+              href="#products"
+              class="gold-bg text-white px-6 md:px-7 py-3.5 rounded-lg font-extrabold shadow-xl hover:opacity-95 transition"
+            >
+              View Trolley Bags →
+            </a>
+
+            <button
+              data-product="General Trolley Bag Inquiry"
+              class="quote-btn border border-white/30 bg-white/5 px-6 md:px-7 py-3.5 rounded-lg font-extrabold hover:bg-white/10 transition"
+            >
+              Request Bulk Quote
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FEATURE STRIP
+  ========================== -->
+  <section class="feature-strip">
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5">
+
+        <div class="feature-card rounded-2xl p-5 md:p-6">
+          <div class="text-xs font-black tracking-widest gold">
+            01
+          </div>
+          <h3 class="font-extrabold mt-3">
+            Bulk Orders
+          </h3>
+          <p class="text-sm text-gray-500 mt-1">
+            100+ pieces
+          </p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-5 md:p-6">
+          <div class="text-xs font-black tracking-widest gold">
+            02
+          </div>
+          <h3 class="font-extrabold mt-3">
+            Manufacturer
+          </h3>
+          <p class="text-sm text-gray-500 mt-1">
+            Direct factory supply
+          </p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-5 md:p-6">
+          <div class="text-xs font-black tracking-widest gold">
+            03
+          </div>
+          <h3 class="font-extrabold mt-3">
+            20 / 24 / 28 Inch
+          </h3>
+          <p class="text-sm text-gray-500 mt-1">
+            Trolley sizes
+          </p>
+        </div>
+
+        <div class="feature-card rounded-2xl p-5 md:p-6">
+          <div class="text-xs font-black tracking-widest gold">
+            04
+          </div>
+          <h3 class="font-extrabold mt-3">
+            Easy Inquiry
+          </h3>
+          <p class="text-sm text-gray-500 mt-1">
+            WhatsApp / Phone
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================
+       PRODUCTS
+  ========================== -->
+  <section id="products" class="py-20 md:py-28 bg-[#f6f7f9]">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="max-w-3xl mb-12">
+        <div class="section-label">
+          OUR TROLLEY BAGS
+        </div>
+
+        <h2 class="section-title text-3xl md:text-5xl font-black mt-3">
+          Choose Your Required Size
+        </h2>
+
+        <p class="text-gray-500 mt-4 leading-7">
+          Soft and fabric trolley bags suitable for wholesale,
+          retail distribution and bulk business requirements.
+        </p>
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- 20 INCH -->
+        <article class="gallery-card rounded-2xl overflow-hidden">
+
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo1.png"
+              alt="20 Inch Asgar Luxury Bags trolley bag"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex items-center justify-between">
+              <span class="section-label">
+                SIZE
+              </span>
+
+              <span class="text-xs font-bold text-gray-400">
+                01
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-black mt-2">
+              20 Inch Trolley Bag
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-3 leading-6">
+              Soft / fabric trolley bag for wholesale and
+              bulk requirements.
+            </p>
+
+            <button
+              data-product="20 Inch Trolley Bag"
+              class="quote-btn mt-5 w-full navy text-white py-3.5 rounded-lg font-extrabold hover:bg-[#0d2139] transition"
+            >
+              Get Bulk Quote
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 24 INCH -->
+        <article class="gallery-card rounded-2xl overflow-hidden">
+
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo2.png"
+              alt="24 Inch Asgar Luxury Bags trolley bag"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex items-center justify-between">
+              <span class="section-label">
+                SIZE
+              </span>
+
+              <span class="text-xs font-bold text-gray-400">
+                02
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-black mt-2">
+              24 Inch Trolley Bag
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-3 leading-6">
+              Soft / fabric trolley bag for wholesale and
+              bulk requirements.
+            </p>
+
+            <button
+              data-product="24 Inch Trolley Bag"
+              class="quote-btn mt-5 w-full navy text-white py-3.5 rounded-lg font-extrabold hover:bg-[#0d2139] transition"
+            >
+              Get Bulk Quote
+            </button>
+
+          </div>
+
+        </article>
+
+
+        <!-- 28 INCH -->
+        <article class="gallery-card rounded-2xl overflow-hidden">
+
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo3.png"
+              alt="28 Inch Asgar Luxury Bags trolley bag"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-6">
+
+            <div class="flex items-center justify-between">
+              <span class="section-label">
+                SIZE
+              </span>
+
+              <span class="text-xs font-bold text-gray-400">
+                03
+              </span>
+            </div>
+
+            <h3 class="text-2xl font-black mt-2">
+              28 Inch Trolley Bag
+            </h3>
+
+            <p class="text-gray-500 text-sm mt-3 leading-6">
+              Soft / fabric trolley bag for wholesale and
+              bulk requirements.
+            </p>
+
+            <button
+              data-product="28 Inch Trolley Bag"
+              class="quote-btn mt-5 w-full navy text-white py-3.5 rounded-lg font-extrabold hover:bg-[#0d2139] transition"
+            >
+              Get Bulk Quote
+            </button>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PNG PRODUCT GALLERY
+       ALL 6 PNG IMAGES
+  ========================== -->
+  <section id="gallery" class="py-20 md:py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="section-label">
+          PRODUCT COLLECTION
+        </div>
+
+        <h2 class="section-title text-3xl md:text-5xl font-black mt-3">
+          Product Gallery
+        </h2>
+
+        <p class="text-gray-500 mt-4 leading-7">
+          Explore our trolley bag collection. All product photographs
+          are presented directly from the supplied product collection.
+        </p>
+      </div>
+
+
+      <div class="premium-line my-10"></div>
+
+
+      <!-- ALL PNG FILES -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-square">
+            <img
+              src="images/photo1.png"
+              alt="Asgar Luxury Bags product photo 1"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              PRODUCT 01
+            </div>
+
+            <h3 class="font-extrabold mt-1">
+              Trolley Bag Collection
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-square">
+            <img
+              src="images/photo2.png"
+              alt="Asgar Luxury Bags product photo 2"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              PRODUCT 02
+            </div>
+
+            <h3 class="font-extrabold mt-1">
+              Trolley Bag Collection
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-square">
+            <img
+              src="images/photo3.png"
+              alt="Asgar Luxury Bags product photo 3"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              PRODUCT 03
+            </div>
+
+            <h3 class="font-extrabold mt-1">
+              Trolley Bag Collection
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-square">
+            <img
+              src="images/photo4.png"
+              alt="Asgar Luxury Bags product photo 4"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              PRODUCT 04
+            </div>
+
+            <h3 class="font-extrabold mt-1">
+              Trolley Bag Collection
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-square">
+            <img
+              src="images/photo5.png"
+              alt="Asgar Luxury Bags product photo 5"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              PRODUCT 05
+            </div>
+
+            <h3 class="font-extrabold mt-1">
+              Trolley Bag Collection
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-square">
+            <img
+              src="images/photo6.png"
+              alt="Asgar Luxury Bags product photo 6"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              PRODUCT 06
+            </div>
+
+            <h3 class="font-extrabold mt-1">
+              Trolley Bag Collection
+            </h3>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       JPG COLLECTION
+       ALL 6 JPG IMAGES
+  ========================== -->
+  <section class="py-20 md:py-28 bg-[#f6f7f9]">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="max-w-3xl mb-10">
+        <div class="section-label">
+          MORE PRODUCT VIEWS
+        </div>
+
+        <h2 class="section-title text-3xl md:text-5xl font-black mt-3">
+          Full Product Collection
+        </h2>
+
+        <p class="text-gray-500 mt-4 leading-7">
+          Additional product views for buyers who want to inspect
+          the collection before sending a bulk inquiry.
+        </p>
+      </div>
+
+
+      <!-- ALL JPG FILES -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo1.jpg"
+              alt="Asgar Luxury Bags product photo 1 JPG"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              VIEW 01
+            </div>
+            <h3 class="font-extrabold mt-1">
+              Asgar Luxury Bags
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo2.jpg"
+              alt="Asgar Luxury Bags product photo 2 JPG"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              VIEW 02
+            </div>
+            <h3 class="font-extrabold mt-1">
+              Asgar Luxury Bags
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo3.jpg"
+              alt="Asgar Luxury Bags product photo 3 JPG"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              VIEW 03
+            </div>
+            <h3 class="font-extrabold mt-1">
+              Asgar Luxury Bags
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo4.jpg"
+              alt="Asgar Luxury Bags product photo 4 JPG"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              VIEW 04
+            </div>
+            <h3 class="font-extrabold mt-1">
+              Asgar Luxury Bags
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo5.jpg"
+              alt="Asgar Luxury Bags product photo 5 JPG"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              VIEW 05
+            </div>
+            <h3 class="font-extrabold mt-1">
+              Asgar Luxury Bags
+            </h3>
+          </div>
+        </article>
+
+
+        <article class="gallery-card rounded-2xl overflow-hidden">
+          <div class="image-frame aspect-[4/3]">
+            <img
+              src="images/photo6.jpg"
+              alt="Asgar Luxury Bags product photo 6 JPG"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="p-4">
+            <div class="text-xs font-black gold tracking-widest">
+              VIEW 06
+            </div>
+            <h3 class="font-extrabold mt-1">
+              Asgar Luxury Bags
+            </h3>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SIZES
+  ========================== -->
+  <section id="sizes" class="py-20 md:py-28 bg-white">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+      <div class="text-center">
+        <div class="section-label">
+          SIZE OPTIONS
+        </div>
+
+        <h2 class="section-title text-3xl md:text-5xl font-black mt-3">
+          20" • 24" • 28"
+        </h2>
+
+        <p class="text-gray-500 mt-4">
+          Tell us the size and quantity you need.
+        </p>
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-5 mt-12">
+
+        <button
+          data-product="20 Inch Trolley Bag"
+          class="quote-btn size-card rounded-2xl p-8 text-center"
+          type="button"
+        >
+          <strong class="text-6xl font-black gold">
+            20"
+          </strong>
+
+          <span class="block font-extrabold text-xl mt-4">
+            Trolley Bag
+          </span>
+
+          <span class="block text-gray-500 text-sm mt-2">
+            Bulk inquiry
+          </span>
+
+          <span class="block mt-5 text-sm font-bold text-gray-800">
+            Request Quote →
+          </span>
+        </button>
+
+
+        <button
+          data-product="24 Inch Trolley Bag"
+          class="quote-btn size-card rounded-2xl p-8 text-center"
+          type="button"
+        >
+          <strong class="text-6xl font-black gold">
+            24"
+          </strong>
+
+          <span class="block font-extrabold text-xl mt-4">
+            Trolley Bag
+          </span>
+
+          <span class="block text-gray-500 text-sm mt-2">
+            Bulk inquiry
+          </span>
+
+          <span class="block mt-5 text-sm font-bold text-gray-800">
+            Request Quote →
+          </span>
+        </button>
+
+
+        <button
+          data-product="28 Inch Trolley Bag"
+          class="quote-btn size-card rounded-2xl p-8 text-center"
+          type="button"
+        >
+          <strong class="text-6xl font-black gold">
+            28"
+          </strong>
+
+          <span class="block font-extrabold text-xl mt-4">
+            Trolley Bag
+          </span>
+
+          <span class="block text-gray-500 text-sm mt-2">
+            Bulk inquiry
+          </span>
+
+          <span class="block mt-5 text-sm font-bold text-gray-800">
+            Request Quote →
+          </span>
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PROCESS
+  ========================== -->
+  <section id="process" class="py-20 md:py-28 bg-[#f6f7f9]">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="max-w-3xl mb-12">
+        <div class="section-label">
+          BULK ORDER PROCESS
+        </div>
+
+        <h2 class="section-title text-3xl md:text-5xl font-black mt-3">
+          Simple Business Inquiry
+        </h2>
+
+        <p class="text-gray-500 mt-4">
+          From selecting the size to discussing your order,
+          the process is simple.
+        </p>
+      </div>
+
+
+      <div class="grid md:grid-cols-4 gap-5">
+
+        <div class="process-card rounded-2xl p-6 md:p-7">
+          <div class="process-number">
+            01
+          </div>
+
+          <div class="w-11 h-11 rounded-xl navy text-white flex items-center justify-center font-black relative z-10">
+            01
+          </div>
+
+          <h3 class="font-black text-xl mt-5">
+            Choose Size
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2 leading-6">
+            Select 20", 24" or 28" trolley bag according
+            to your requirement.
+          </p>
+        </div>
+
+
+        <div class="process-card rounded-2xl p-6 md:p-7">
+          <div class="process-number">
+            02
+          </div>
+
+          <div class="w-11 h-11 rounded-xl navy text-white flex items-center justify-center font-black relative z-10">
+            02
+          </div>
+
+          <h3 class="font-black text-xl mt-5">
+            Tell Quantity
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2 leading-6">
+            Tell us whether you need 100, 200 or more
+            pieces for your business order.
+          </p>
+        </div>
+
+
+        <div class="process-card rounded-2xl p-6 md:p-7">
+          <div class="process-number">
+            03
+          </div>
+
+          <div class="w-11 h-11 rounded-xl navy text-white flex items-center justify-center font-black relative z-10">
+            03
+          </div>
+
+          <h3 class="font-black text-xl mt-5">
+            Send Inquiry
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2 leading-6">
+            Send your requirement directly through
+            WhatsApp with the inquiry form.
+          </p>
+        </div>
+
+
+        <div class="process-card rounded-2xl p-6 md:p-7">
+          <div class="process-number">
+            04
+          </div>
+
+          <div class="w-11 h-11 rounded-xl navy text-white flex items-center justify-center font-black relative z-10">
+            04
+          </div>
+
+          <h3 class="font-black text-xl mt-5">
+            Discuss Order
+          </h3>
+
+          <p class="text-gray-500 text-sm mt-2 leading-6">
+            Discuss price, colours, availability and
+            delivery details.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       BULK ORDER CTA + FORM
+  ========================== -->
+  <section id="bulk-order" class="cta-section py-20 md:py-28 text-white">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <div>
+
+          <div class="section-label">
+            BULK REQUIREMENT
+          </div>
+
+          <h2 class="text-3xl md:text-5xl font-black mt-4 leading-tight">
+            Need 100+ Trolley Bags?
+          </h2>
+
+          <p class="text-gray-300 mt-5 leading-8 max-w-xl">
+            Send your size and quantity. Your inquiry will open
+            WhatsApp with the requirement already prepared.
+          </p>
+
+
+          <div class="mt-8 space-y-4">
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center gold font-black">
+                ✓
+              </div>
+
+              <div>
+                <div class="font-extrabold">
+                  Wholesale & Bulk Orders
+                </div>
+
+                <div class="text-gray-400 text-sm mt-1">
+                  Suitable for retailers, distributors and business buyers.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center gold font-black">
+                ✓
+              </div>
+
+              <div>
+                <div class="font-extrabold">
+                  20 / 24 / 28 Inch Sizes
+                </div>
+
+                <div class="text-gray-400 text-sm mt-1">
+                  Select your required trolley size.
+                </div>
+              </div>
+            </div>
+
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-white/10 border border-white/10 flex items-center justify-center gold font-black">
+                ✓
+              </div>
+
+              <div>
+                <div class="font-extrabold">
+                  Direct WhatsApp Inquiry
+                </div>
+
+                <div class="text-gray-400 text-sm mt-1">
+                  Fast and simple business communication.
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- FORM -->
+        <div class="bg-white text-gray-900 rounded-2xl p-6 md:p-8 shadow-2xl">
+
+          <div class="section-label">
+            REQUEST QUOTE
+          </div>
+
+          <h3 class="text-2xl md:text-3xl font-black mt-2">
+            Send Your Requirement
+          </h3>
+
+          <form id="quoteForm" class="mt-7">
+
+            <label
+              for="formProduct"
+              class="block text-sm font-bold mb-2"
+            >
+              Product Size
+            </label>
+
+            <select
+              id="formProduct"
+              class="w-full border border-gray-200 rounded-lg px-4 py-3.5 mb-4 outline-none focus:border-yellow-500"
+            >
+              <option>20 Inch Trolley Bag</option>
+              <option>24 Inch Trolley Bag</option>
+              <option>28 Inch Trolley Bag</option>
+            </select>
+
+
+            <label
+              for="formQuantity"
+              class="block text-sm font-bold mb-2"
+            >
+              Required Quantity
+            </label>
+
+            <input
+              id="formQuantity"
+              type="number"
+              min="1"
+              placeholder="e.g. 100"
+              class="w-full border border-gray-200 rounded-lg px-4 py-3.5 mb-4 outline-none focus:border-yellow-500"
+            />
+
+
+            <label
+              for="formName"
+              class="block text-sm font-bold mb-2"
+            >
+              Your Name / Business Name
+            </label>
+
+            <input
+              id="formName"
+              type="text"
+              placeholder="Enter name"
+              class="w-full border border-gray-200 rounded-lg px-4 py-3.5 mb-4 outline-none focus:border-yellow-500"
+            />
+
+
+            <label
+              for="formMessage"
+              class="block text-sm font-bold mb-2"
+            >
+              Message
+              <span class="text-gray-400 font-normal">
+                (optional)
+              </span>
+            </label>
+
+            <textarea
+              id="formMessage"
+              rows="4"
+              placeholder="Colour, model or other requirement..."
+              class="w-full border border-gray-200 rounded-lg px-4 py-3.5 mb-5 outline-none focus:border-yellow-500 resize-none"
+            ></textarea>
+
+
+            <button
+              type="submit"
+              class="w-full bg-green-600 hover:bg-green-700 text-white py-4 rounded-lg font-extrabold transition"
+            >
+              Send Bulk Inquiry on WhatsApp
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+  <section id="contact" class="py-20 md:py-28 bg-white">
+
+    <div class="max-w-7xl mx-auto px-4">
+
+      <div class="text-center max-w-3xl mx-auto">
+
+        <div class="section-label">
+          CONTACT ASGAR LUXURY BAGS
+        </div>
+
+        <h2 class="section-title text-3xl md:text-5xl font-black mt-3">
+          Let's Discuss Your Bulk Requirement
+        </h2>
+
+        <p class="text-gray-500 mt-4">
+          For trolley bag wholesale and bulk inquiries.
+        </p>
+
+      </div>
+
+
+      <div class="mt-12 grid md:grid-cols-3 gap-5">
+
+        <!-- CALL -->
+        <a
+          href="tel:+919653181917"
+          class="contact-card rounded-2xl p-6 md:p-7"
+        >
+          <div class="text-2xl font-black gold">
+            CALL
+          </div>
+
+          <h3 class="font-black text-xl mt-4">
+            +91 96531 81917
+          </h3>
+
+          <p class="text-gray-500 mt-2">
+            Speak directly for business inquiries.
+          </p>
+        </a>
+
+
+        <!-- EMAIL -->
+        <a
+          href="mailto:aspak0131@gmail.com"
+          class="contact-card rounded-2xl p-6 md:p-7"
+        >
+          <div class="text-2xl font-black gold">
+            EMAIL
+          </div>
+
+          <h3 class="font-black text-xl mt-4 break-all">
+            aspak0131@gmail.com
+          </h3>
+
+          <p class="text-gray-500 mt-2">
+            Send your business requirement by email.
+          </p>
+        </a>
+
+
+        <!-- WHATSAPP -->
+        <a
+          href="https://wa.me/919653181917"
+          target="_blank"
+          rel="noopener"
+          class="contact-card rounded-2xl p-6 md:p-7"
+        >
+          <div class="text-2xl font-black text-green-600">
+            WHATSAPP
+          </div>
+
+          <h3 class="font-black text-xl mt-4">
+            Bulk Inquiry
+          </h3>
+
+          <p class="text-gray-500 mt-2">
+            Send your requirement directly on WhatsApp.
+          </p>
+        </a>
+
+      </div>
+
+
+      <!-- SOCIAL MEDIA -->
+      <div class="mt-16 text-center">
+
+        <div class="section-label">
+          FOLLOW ASGAR LUXURY BAGS
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-6">
+
+          <a
+            class="social-link border border-gray-200 px-5 py-3 rounded-xl font-bold"
+            href="https://www.instagram.com/asgarluxurybags"
+            target="_blank"
+            rel="noopener"
+          >
+            Instagram
+          </a>
+
+          <a
+            class="social-link border border-gray-200 px-5 py-3 rounded-xl font-bold"
+            href="https://x.com/md_asgar_786"
+            target="_blank"
+            rel="noopener"
+          >
+            X
+          </a>
+
+          <a
+            class="social-link border border-gray-200 px-5 py-3 rounded-xl font-bold"
+            href="https://www.youtube.com/@asgarluxurybags"
+            target="_blank"
+            rel="noopener"
+          >
+            YouTube
+          </a>
+
+          <a
+            class="social-link border border-gray-200 px-5 py-3 rounded-xl font-bold"
+            href="https://www.facebook.com/share/1HpSLG6LGg/"
+            target="_blank"
+            rel="noopener"
+          >
+            Facebook
+          </a>
+
+          <a
+            class="social-link border border-gray-200 px-5 py-3 rounded-xl font-bold"
+            href="https://www.threads.com/@asgarluxurybags"
+            target="_blank"
+            rel="noopener"
+          >
+            Threads
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="navy text-white">
+
+    <div class="max-w-7xl mx-auto px-4 py-12">
+
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+
+        <div>
+
+          <a href="#home" class="inline-flex items-center gap-3">
+
+            <div class="logo-box">
+              AL
+            </div>
+
+            <div>
+              <div class="font-black tracking-[0.18em]">
+                ASGAR
+              </div>
+
+              <div class="text-[10px] font-bold tracking-[0.24em] text-gray-400 mt-1">
+                LUXURY BAGS
+              </div>
+            </div>
+
+          </a>
+
+          <p class="text-gray-400 mt-5 max-w-md leading-7">
+            Soft Trolley Bag Manufacturer & Wholesaler.
+            Supplying trolley bags for wholesale and bulk
+            business requirements.
+          </p>
+
+        </div>
+
+
+        <div class="md:text-right">
+
+          <div class="text-xs font-black tracking-widest gold">
+            BUSINESS INQUIRY
+          </div>
+
+          <a
+            href="tel:+919653181917"
+            class="block font-bold mt-3 hover:text-yellow-400"
+          >
+            +91 96531 81917
+          </a>
+
+          <a
+            href="mailto:aspak0131@gmail.com"
+            class="block text-gray-400 mt-1 hover:text-yellow-400"
+          >
+            aspak0131@gmail.com
+          </a>
+
+          <a
+            href="https://wa.me/919653181917"
+            target="_blank"
+            rel="noopener"
+            class="inline-block mt-5 bg-green-600 hover:bg-green-700 px-5 py-3 rounded-lg font-extrabold"
+          >
+            WhatsApp Us
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="premium-line mt-10"></div>
+
+
+      <div class="pt-6 flex flex-col md:flex-row items-center justify-between gap-3 text-sm text-gray-500">
+
+        <p>
+          © <span id="year"></span> Asgar Luxury Bags. All rights reserved.
+        </p>
+
+        <p>
+          Wholesale • Bulk Orders • Trolley Bags
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       QUOTE MODAL
+  ========================== -->
+  <div
+    id="quoteModal"
+    class="modal-wrap"
+    aria-hidden="true"
+  >
+
+    <div
+      class="modal-box"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="quoteTitle"
+    >
+
+      <div class="navy text-white p-6 rounded-t-[22px]">
+
+        <div class="flex items-start justify-between gap-5">
+
+          <div>
+            <div class="text-xs font-black tracking-widest gold">
+              BULK INQUIRY
+            </div>
+
+            <h2
+              id="quoteTitle"
+              class="text-2xl font-black mt-2"
+            >
+              Request a Quote
+            </h2>
+          </div>
+
+
+          <button
+            id="closeModal"
+            type="button"
+            class="w-10 h-10 rounded-xl border border-white/15 hover:bg-white/10 text-xl"
+            aria-label="Close quote form"
+          >
+            ×
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div class="p-6 md:p-7">
+
+        <p class="text-gray-500 text-sm leading-6">
+          Fill in your basic requirement and continue to WhatsApp.
+        </p>
+
+
+        <form id="modalForm" class="mt-6">
+
+          <label
+            for="modalProduct"
+            class="block text-sm font-bold mb-2"
+          >
+            Selected Product
+          </label>
+
+          <input
+            id="modalProduct"
+            readonly
+            class="w-full border border-gray-200 rounded-lg px-4 py-3.5 bg-gray-50 mb-4 outline-none"
+          />
+
+
+          <label
+            for="modalQuantity"
+            class="block text-sm font-bold mb-2"
+          >
+            Quantity
+          </label>
+
+          <input
+            id="modalQuantity"
+            required
+            type="number"
+            min="1"
+            placeholder="e.g. 100"
+            class="w-full border border-gray-200 rounded-lg px-4 py-3.5 mb-4 outline-none focus:border-yellow-500"
+          />
+
+
+          <label
+            for="modalName"
+            class="block text-sm font-bold mb-2"
+          >
+            Name / Business
+          </label>
+
+          <input
+            id="modalName"
+            required
+            type="text"
+            placeholder="Enter name"
+            class="w-full border border-gray-200 rounded-lg px-4 py-3.5 mb-5 outline-none focus:border-yellow-500"
+          />
+
+
+          <button
+            type="submit"
+            class="w-full bg-green-600 hover:bg-green-700 text-white py-3.5 rounded-lg font-extrabold transition"
+          >
+            Continue to WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       TOAST
+  ========================== -->
+  <div id="toast" class="toast">
+    Opening WhatsApp...
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script src="app.js"></script>
+
+</body>
+</html>
